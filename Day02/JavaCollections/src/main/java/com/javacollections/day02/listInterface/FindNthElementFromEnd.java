@@ -1,0 +1,36 @@
+package com.javacollections.day02.listInterface;
+import java.util.*;
+
+//Create a class FindElement to find the element
+class FindElement{
+    //Create a static method to find the nth element from the end
+    public static Character getNthElementFromEnd(List<Character> list,int n){
+        return list.get(list.size()-n);
+    }
+}
+
+//Create a class FindNthElementFromEnd
+public class FindNthElementFromEnd {
+    public static void main(String[] args) {
+
+        //Create a LinkedList to store the element
+        LinkedList<Character> list = new LinkedList<>();
+
+        //Call add method to add element
+        list.add('A');
+        list.add('B');
+        list.add('C');
+        list.add('D');
+        list.add('E');
+        list.add('F');
+
+        //print the list
+        System.out.println("List: "+list);
+
+        //Create a variable to store the value
+        int n = 2;
+
+        //print the result
+        System.out.println(n+" Element from end: "+FindElement.getNthElementFromEnd(list,n));
+    }
+}
