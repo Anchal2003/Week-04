@@ -1,0 +1,46 @@
+package com.javaexception.day04;
+
+import java.util.*;
+
+//Create a class HandleUncheckedException to handle the Arithmetic and InputMismatch exception
+class HandleUncheckedException{
+    //Create a static method divideNumbers to divide number
+    public static void divideNumbers(){
+
+        //Use try block to handle the exception
+        try {
+            //Create an object of Scanner class
+            Scanner input = new Scanner(System.in);
+
+            //Create a variable num1 and take input from user
+            System.out.print("Enter First Number: ");
+            int num1 = input.nextInt();
+
+            //Create a variable num and take input from user
+            System.out.print("Enter Second Number: ");
+            int num2 = input.nextInt();
+
+            //Create a variable to store result
+            int result = num1/num2;
+
+            //Print the result
+            System.out.println("Answer: "+result);
+
+        } catch (ArithmeticException e){ //Catch block to catch the ArithmeticException
+            //Print the statement
+            System.out.println("Denominator can't be zero");
+        } catch (InputMismatchException e){//Catch block to catch the InputMismatchException
+            //Print the statement
+            System.out.println("Invalid Input!");
+        }
+    }
+}
+
+//Create a class UncheckedException
+public class UncheckedException {
+    public static void main(String[] args){
+
+        //Call the method to divide number and print the result
+        HandleUncheckedException.divideNumbers();
+    }
+}
