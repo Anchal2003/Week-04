@@ -1,0 +1,5 @@
+Java is a programming language.
+People use Java to make software.
+Java runs on different types of computers.
+Java helps to build big and small applications.
+It has many tools that make coding easier.
