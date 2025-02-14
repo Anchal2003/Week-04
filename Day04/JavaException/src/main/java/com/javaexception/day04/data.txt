@@ -1,0 +1,8 @@
+read()	Reads one byte of data from the input stream.
+read(byte[] array)()	Reads byte from the stream and stores that byte in the specified array.
+mark()	It marks the position in the input stream until the data has been read.
+available()	Returns the number of bytes available in the input stream.
+markSupported()	It checks if the mark() method and the reset() method is supported in the stream.
+reset()	Returns the control to the point where the mark was set inside the stream.
+skips()	 Skips and removes a particular number of bytes from the input stream.
+close()	Closes the input stream.
