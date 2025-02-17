@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 // Create a class Configuration with a private static field API_KEY
 class Configuration {
     //Create a private static variable(field) to store API_KEY
-    private static String API_KEY = "AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe ";
+    private static String API_KEY = "AsflkmaGZ-Hjfmljn_3snfkj";
 
     //Create a method to display the API_KEY
     public static void displayApiKey() {
